@@ -11,7 +11,7 @@ Create a web-based application that allows a user to play rock-paper-scissors.
 **Requirements**
 
 - The application should allow a user to choose rock, paper, or scissors
-- The application should make a request to the api documented here to retrieve the server’s throw.  Make sure to consider the non happy path cases.
+- The application should make a request to the api documented here to retrieve the server’s throw.  Make sure to consider the non happy path cases.
 
     https://curbrockpaperscissors.docs.apiary.io
 
@@ -26,11 +26,11 @@ Create a web-based application that allows a user to play rock-paper-scissors.
 - Scissors beats paper
 - Paper beats rock
 - Identical throws tie (rock == rock, etc.)
-- Extra Credit : What if we threw in Hammer as a choice?  How would you represent more than 3 choices?
+- Extra Credit : What if we threw in Hammer as a choice?  How would you represent more than 3 choices?
 
 **Technologies**
 
-Use any technology that you think best show cases your work.  For example, if you are interviewing for a web application developer position you might use pure javascript, jQuery, React.js, etc.  For a server position you might use Ruby on Rails, Node, Lambdas, Java (if you’re crazy), etc.
+Use any technology that you think best show cases your work.  For example, if you are interviewing for a web application developer position you might use pure javascript, jQuery, React.js, etc.  For a server position you might use Ruby on Rails, Node, Lambdas, Java (if you’re crazy), etc.
 
 **User Interface**
 
@@ -44,4 +44,4 @@ The icon assets can be downloaded from the adobe site.
 
 **Deliverable**
 
-Link to a github repo with a readme explaining how to install and play the game.  The repo should include a master branch and a feature branch with a PR.  Please commit incrementally as the application is developed.
+Link to a github repo with a readme explaining how to install and play the game.  The repo should include a master branch and a feature branch with a PR.  Please commit incrementally as the application is developed.
