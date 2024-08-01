@@ -1,11 +1,12 @@
 ## Rock-Paper-Scissors
 
 Dependencies:
-* Docker
+* [Docker](https://docker.com)
+* Docker Buildx
 
 Instructions:
-* docker buildx build -t rps .
-* docker run -p 3000:3000 -e RAILS_MASTER_KEY="(YOUR_MASTER_KEY_HERE)" rps
+* run $ docker buildx build -t rps .
+* run $ docker run -p 3000:3000 -e RAILS_MASTER_KEY="(YOUR_MASTER_KEY_HERE)" rps
 * go to http://localhost:3000 or http://127.0.0.1:3000 in your browser and enjoy.
 
 
