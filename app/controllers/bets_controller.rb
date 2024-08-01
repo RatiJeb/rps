@@ -2,13 +2,13 @@
 
 # BetsController
 class BetsController < ApplicationController
+  include BetOptions
   def index
-    @bet_options = %i[rock paper scissors]
+    @bet_options = options
   end
 
   def loading
-    @bet_options = %i[rock paper scissors]
-    @option = bet_params[:option].strip if @bet_options.include?(bet_params[:option].strip.downcase.to_sym)
+    @option = bet_params[:option].strip if valid_option?(bet_params[:option])
     render partial: 'loading'
   end
 
