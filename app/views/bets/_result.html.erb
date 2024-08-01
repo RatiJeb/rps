@@ -1,0 +1,13 @@
+<%= turbo_frame_tag 'modal' do %>
+  <div class='result-modal'>
+    <div class='result-modal-div'>
+      <%= button_tag '#', type: 'button', method: :delete, data: { controller: 'modal', action: 'click->modal#close_modal' }, class: 'close-button' do %>
+        <%= image_tag 'x.png', class: 'close-button-image' %>
+      <% end %>
+      <h1><%= generate_result_heading(@result) %></h1>
+      <p><%= generate_result_paragraph(@result) %></p>
+      <%= image_tag "#{@result[:our_bet].to_s.camelcase}.svg", class: 'result-image' %>
+      <%= button_tag 'OK', type: 'button', method: :delete, data: { controller: 'modal', action: 'click->modal#close_modal'}, class: 'ok-button'%>
+    </div>
+  </div>
+<% end %>

@@ -7,6 +7,11 @@ class BetsController < ApplicationController
     @bet_options = options
   end
 
+  def create
+    @result = BetProcessor.new(bet_params[:option].strip).call
+    render partial: 'result'
+  end
+
   def loading
     @option = bet_params[:option].strip if valid_option?(bet_params[:option])
     render partial: 'loading'

@@ -1,7 +1,5 @@
 require:
   - rubocop-rails
-  - rubocop-rspec
-  - rubocop-rspec_rails
 
 AllCops:
   SuggestExtensions: false
@@ -9,3 +7,7 @@ AllCops:
   Exclude:
     - "config/*/**"
     - "bin/*"
+
+Metrics/BlockLength:
+  Exclude:
+  - "spec/*/**"

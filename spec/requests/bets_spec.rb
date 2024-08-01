@@ -23,16 +23,28 @@ RSpec.describe 'Bets' do
   end
 
   describe 'GET /loading' do
-    let(:bet_options) { %i[rock paper scissors] }
-
     it 'renders a successful response' do
       get '/bets/loading?option=Rock'
       expect(response).to have_http_status(:success)
     end
 
-    it 'renders the index template' do
+    it 'renders the loading template' do
       get '/bets/loading?option=Rock'
       expect(response).to render_template(partial: '_loading', locals: { :@option => 'Rock' })
+    end
+  end
+
+  describe 'POST /create' do
+    let(:bet_options) { %i[rock paper scissors] }
+
+    it 'renders a successful response' do
+      post '/bets', params: { option: bet_options[0].to_s }
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'renders the result template' do
+      post '/bets', params: { option: bet_options[0].to_s }
+      expect(response).to render_template(partial: '_result')
     end
   end
 end
