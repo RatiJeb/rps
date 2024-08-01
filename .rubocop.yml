@@ -1,0 +1,12 @@
+require:
+  - rubocop-rails
+  - rubocop-capybara
+  - rubocop-rspec
+  - rubocop-rspec_rails
+
+AllCops:
+  SuggestExtensions: false
+  NewCops: enable
+  Exclude:
+    - "config/*/**"
+    - "bin/*"

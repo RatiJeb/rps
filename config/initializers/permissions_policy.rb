@@ -1,3 +1,5 @@
+# frozen_string_literal: false
+
 # Be sure to restart your server when you modify this file.
 
 # Define an application-wide HTTP permissions policy. For further
