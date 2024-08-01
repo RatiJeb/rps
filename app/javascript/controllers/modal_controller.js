@@ -10,7 +10,7 @@ export default class extends Controller {
         user_bet = this.element.textContent
         this.fetch_loader()
         // fake loading time to see the loader
-        setTimeout(this.fetch_result, 2000)
+        setTimeout(this.fetch_result, 1000)
     }
 
     fetch_loader() {
