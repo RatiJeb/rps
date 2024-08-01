@@ -21,4 +21,18 @@ RSpec.describe 'Bets' do
       expect(response).to render_template(:index)
     end
   end
+
+  describe 'GET /loading' do
+    let(:bet_options) { %i[rock paper scissors] }
+
+    it 'renders a successful response' do
+      get '/bets/loading?option=Rock'
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'renders the index template' do
+      get '/bets/loading?option=Rock'
+      expect(response).to render_template(partial: '_loading', locals: { :@option => 'Rock' })
+    end
+  end
 end

@@ -1,0 +1,31 @@
+.bet-option-card {
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 240px;
+  height: 273px;
+  padding: 45px 20px 0 20px;
+  border-radius: 5px;
+}
+
+.bet-option-card:hover {
+  background-color: #F8F8F8;
+}
+
+.bet-option-card:active {
+  background-color: #EEE;
+}
+
+.bet-option-card > img {
+  width: 63px;
+}
+
+.bet-option-card > p {
+  color: #36006C;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
