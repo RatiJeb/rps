@@ -1,0 +1,20 @@
+<%= turbo_frame_tag 'modal' do %>
+  <div class='loading-modal'>
+    <div class='loading-modal-div'>
+      <%= button_tag '#', type: 'button', method: :post, data: { controller: 'modal', action: 'click->modal#close_modal' }, class: 'close-button' do %>
+        <%= image_tag 'x.png', class: 'close-button-image' %>
+      <% end %>
+      <h1>WAITING CURB’S CHOOSE</h1>
+      <div class='options-div'>
+        <div class='option-div'>
+          <p>Your bet</p>
+          <%= image_tag "#{@option.to_s.camelcase}.svg", class: 'option-image' %>
+        </div>
+        <div class='option-div'>
+          <%= image_tag 'curb_logo.png', class: 'opponent-logo' %>
+          <%= image_tag 'loader.png', class: 'option-image' %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

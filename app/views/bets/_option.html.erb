@@ -1,0 +1,4 @@
+<%= button_tag '#', type: 'button', data: { controller: 'modal', action: 'click->modal#create_bet' }, class: 'bet-option-card' do %>
+  <p><%= option.to_s.camelcase %></p>
+  <%= image_tag "#{option.to_s.camelcase}.svg" %>
+<% end %>
