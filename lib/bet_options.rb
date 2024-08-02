@@ -12,6 +12,6 @@ module BetOptions
   end
 
   def bettors
-    %i[app api]
+    %i[api app]
   end
 end
